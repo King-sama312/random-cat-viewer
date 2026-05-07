@@ -5,6 +5,7 @@ import Header from "./components/Header.jsx";
 import MainContent from "./components/MainContent.jsx";
 import Sidebar from "./components/Sidebar.jsx";
 import Footer from "./components/Footer.jsx";
+import RainParticles from "./components/RainParticles.jsx"
 
 const API_URL = "https://api.freeapi.app/api/v1/public/cats/cat/random";
 
@@ -48,6 +49,9 @@ export default function App() {
     <div className="h-screen relative overflow-x-hidden">
       {/* Background gradient blobs */}
       <BackgroundGradient />
+
+    {/* Rain Particles */}
+    <RainParticles/>
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
         {/* Header */}
