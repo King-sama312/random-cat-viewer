@@ -106,7 +106,7 @@ body::before{
 .rain {
   position: absolute;
   width: 2px;
-  height: 100px;
+  height: 80px;
   background: linear-gradient(transparent, cyan);
   top: -120px;
 

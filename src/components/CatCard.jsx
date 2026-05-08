@@ -4,13 +4,13 @@ export default function CatCard({ cat, loading }) {
   }
 
   return (
-    <div className="animate-fade-up rounded-2xl border border-white/6 bg-(--surface)/60 backdrop-blur-sm overflow-hidden">
+    <div className="animate-fade-up rounded-2xl border border-white/6 bg-(--surface)/40 backdrop-blur-xs overflow-hidden">
       {/* Image */}
-      <div className="relative aspect-4/3 sm:aspect-video bg-(--surface)">
+      <div className="relative aspect-4/3 sm:aspect-video ">
         <img
           src={cat.url}
           alt={`Photo of a ${cat.breed} cat`}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain "
           loading="eager"
         />
         {/* Breed badge */}
