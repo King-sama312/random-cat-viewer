@@ -67,7 +67,7 @@ export default function App() {
           fetchCat={fetchCat}
           />
         {/* Sidebar history */}
-        <Sidebar history={history} />
+        <Sidebar history={history} setCat={setCat}/>
           </div>
       <Footer />
       </div>

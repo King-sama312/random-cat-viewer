@@ -1,6 +1,6 @@
 import React from "react";
 
-function Sidebar({ history }) {
+function Sidebar({ history, setCat }) {
   return (
     <>
       <aside className="order-3 lg:order-2">
@@ -17,6 +17,7 @@ function Sidebar({ history }) {
                 <div
                   key={`${item.id}-${index}`}
                   className="flex items-center gap-3 p-2 rounded-lg hover:bg-white/3 transition-colors cursor-default"
+                  onClick={()=> setCat(item)}
                 >
                   <div className="w-10 h-10 rounded-md overflow-hidden shrink-0 bg-(--surface-light)">
                     <img
